@@ -1,9 +1,11 @@
-# Elysia with Bun runtime
+# Elysia with Drizzle ORM (SQLite) & Lucia Auth
 
 ## Getting Started
-To get started with this template, simply paste this command into your terminal:
 ```bash
-bun create elysia ./elysia-example
+bun add --global node-gyp
+bun install
+bun drizzle-kit generate:sqlite  
+bun run migrate
 ```
 
 ## Development
